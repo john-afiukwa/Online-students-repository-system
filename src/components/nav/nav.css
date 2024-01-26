@@ -1,0 +1,64 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 5px 5rem;
+  background: rgba(128, 0, 128, 0.747);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 3rem 0 0;
+  position: relative;
+}
+
+nav a {
+  font-size: 1rem;
+  padding: 7px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a:hover {
+  background-color: #c653ff49;
+  color: #000;
+  transition: 0.5s;
+}
+
+.active__nav {
+  color: #000;
+}
+
+.menu-bar, .x-bar{
+    display: none;
+    color: white;
+    font-size: 1.4rem; /* Check later */
+    margin-left: 1.5rem;
+}
+
+.menu-bar, .x-bar:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .menu-bar, .x-bar{
+        display: inline-block;
+    }
+    .nav__menu {
+        flex-direction: column;      }
+}

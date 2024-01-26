@@ -1,0 +1,23 @@
+.auth__btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.auth__btn {
+    background: var(--color-gray-600);
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.auth__btn:hover {
+    background: var(--color-hover);
+    color: var(--color-secondary);
+}
+/* .auth__complete-data {
+    display: none;
+} */
